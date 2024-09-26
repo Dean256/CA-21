@@ -14,7 +14,7 @@ df = pd.DataFram(data)
 
 selected_year = st.slider('Select a year', min_value=2010, max_value =2015, value =2013)
 
-st.write(f"Data for the year {selected_year}:"}
+st.write(f"Data for the year {selected_year}:")
 filtereddf = df[df['Year'] == selected_year]
 st.write(filtered_df)
 
