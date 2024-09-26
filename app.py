@@ -8,14 +8,14 @@ st.write("This dashboard helps with sales")
 data = {
   'Year': [2010, 2011, 2012, 2013, 2014, 2015],
   'Region': ['North', 'South','East', 'West', 'Central', 'North'],
-  'Sales Account': [200, 210, 220, 230, 240, 250]
+  'Sales Amount': [200, 210, 220, 230, 240, 250]
 }
-df = pd.DataFram(data)
+df = pd.DataFrame(data)
 
 selected_year = st.slider('Select a year', min_value=2010, max_value =2015, value =2013)
 
 st.write(f"Data for the year {selected_year}:")
-filtereddf = df[df['Year'] == selected_year]
+filtered_df = df[df['Year'] == selected_year]
 st.write(filtered_df)
 
 
